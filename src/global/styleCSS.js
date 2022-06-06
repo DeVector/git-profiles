@@ -47,6 +47,8 @@ body {
 
 main {
   display: block;
+  background: #000;
+  /*color: white;*/
 }
 
 /* Vertical rhythm */

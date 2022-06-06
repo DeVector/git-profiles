@@ -8,6 +8,9 @@ export const Wrapper = styled.div`
   width: 350px;
   height: 150px;
   align-content: center;
+  background: #ff0;
+  border: 2px solid white;
+  border-radius: 5px;
 `;
 
 export const WrapperTitle = styled.h2`
@@ -20,12 +23,12 @@ export const WrapperFullName = styled.h2`
   font-size: 16px;
   font-weight: bold;
   margin: 8px 0;
-  color: #2d3748;
+  color: blue;
 `;
 
 export const WrapperLink = styled.a`
   font-size: 16px;
   font-weight: bold;
   margin: 8px 0;
-  color: #3182ce;
+  color: black;
 `;

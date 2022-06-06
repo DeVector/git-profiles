@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   align-items: flex-start;
+  background: #ff0;
+  border: 2px solid white;
+  border-radius: 5px
 `;
 
 export const WrapperInfoUser = styled.div`
