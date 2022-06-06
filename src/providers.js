@@ -1,12 +1,15 @@
 import React from "react";
 import App from './App';
 import { StyleCSS } from "./global/styleCSS";
+import GitProvider from "./providers/git-provider";
 
 const Providers = () => {
     return (
         <main>
-            <StyleCSS />
-            <App />
+            <GitProvider>
+                <StyleCSS />
+                <App />
+            </GitProvider>
         </main>
     )
 }
