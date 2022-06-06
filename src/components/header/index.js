@@ -15,7 +15,7 @@ const Header = () => {
         <header>
             <S.Wrapper>
                 <input
-                    type={text}
+                    type="text"
                     placeholder="Digite o usuario do git aqui"
                     onChange={(event) => setUsernameForSearch(event.target.value)}
                 />

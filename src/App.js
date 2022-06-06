@@ -1,12 +1,32 @@
+import React from "react";
+import Layout from "./components/layout";
+import useGit from "./hooks/git-hooks";
+import Profile from "./components/profile";
+import Repositories from "./components/repositories";
+import NoSearch from "./components/no-search";
 
 function App() {
+
+  const { gitState } = useGit();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello Word!!</p>
-      </header>
-    </div>
+    <Layout>
+      {gitState.hasUser ? (
+        <>
+          {gitState.loading ? (
+            <p>Loading</p>
+          ) : (
+            <>
+              <Profile />
+              <Repositories />
+            </>
+          )}
+        </>
+      ) : (
+        <NoSearch />
+      )}
+    </Layout>
   );
-}
+};
 
 export default App;

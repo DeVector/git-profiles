@@ -98,7 +98,7 @@ const GitProvider = ({ children }) => {
         gitState,
         getUser: useCallback((username) => getUser(username), []),
         getUserRepo: useCallback((username) => getUserRepo(username), []),
-        getUserStarred: useCallback((username) => getUserStarred(username), []), 
+        getUserStarred: useCallback((username) => getUserStarred(username), []),
     };
 
     return (
